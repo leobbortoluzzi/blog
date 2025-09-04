@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="" lang="{{lang}}">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes" />
+        <base href="{{baseTag.href}}" target="{{baseTag.target}}" />
+
+        {{#if title}}
+        <title>{{title}}</title>
+        {{/if}}
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico?_wwcv={{cacheVersion}}" />
+
+        <link rel="manifest" href="manifest.json?_wwcv=8" />
+        <meta name="theme-color" content="" />
+        
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<style>:root{ --ww-default-font-family: 'Raleway', sans-serif }</style>
+        <style>
+:root {
+--a36fc771-7f03-415f-98c7-85bbf2690078: #f5f5f5;
+--c44c6c3e-2043-4ba8-b347-e990a98f5d23: #ffffff;
+--bca65006-3840-40b6-a2fb-2d97f0365cc9: #e0e0e0;
+--57a931a5-d03e-43f5-8d39-69f199425c5e: #212121;
+--551f65d9-65f5-4a0d-b3ae-5f4d6a07bbf9: #616161;
+--ff3b429c-f0fd-450e-b2cb-c632bce5c876: #1976D2;
+--d2f12289-b165-4945-b573-7bcf770cf8bf: #2196F3;
+--e66810a7-457c-4162-8f48-aa2dd141ca75: #F4F1EB;
+--2a9c4aa1-9063-4efc-90de-7b4b96ddb953: #FFFFFF;
+--6318adb5-7c33-4af6-8124-30d117f17e57: #D9FDD3;
+--64ac9242-fe5b-496b-b725-eaccd3e9ff72: #0A0A0A;}
+.ww-app-theme-dark {
+--a36fc771-7f03-415f-98c7-85bbf2690078: #121212;
+--c44c6c3e-2043-4ba8-b347-e990a98f5d23: #1e1e1e;
+--bca65006-3840-40b6-a2fb-2d97f0365cc9: #2c2c2c;
+--57a931a5-d03e-43f5-8d39-69f199425c5e: #ffffff;
+--551f65d9-65f5-4a0d-b3ae-5f4d6a07bbf9: #b3b3b3;
+--ff3b429c-f0fd-450e-b2cb-c632bce5c876: #1976D2;
+--d2f12289-b165-4945-b573-7bcf770cf8bf: #1565C0;
+--e66810a7-457c-4162-8f48-aa2dd141ca75: #121212;
+--2a9c4aa1-9063-4efc-90de-7b4b96ddb953: #242626;
+--6318adb5-7c33-4af6-8124-30d117f17e57: #004E36;
+--64ac9242-fe5b-496b-b725-eaccd3e9ff72: #FAFAFA;}
+</style>
+        
+
+        {{#alternateLinks}}
+        <link rel="{{rel}}" hreflang="{{hreflang}}" href="{{href}}" />
+        {{/alternateLinks}} {{#if structuredData}}
+        <script type="application/ld+json">
+            {{structuredData}}
+        </script>
+        {{/if}} {{{scripts.head}}} {{#meta}} {{#if name}}
+        <meta name="{{name}}" content="{{content}}" />
+        {{/if}} {{#if itemprop}}
+        <meta itemprop="{{itemprop}}" content="{{content}}" />
+        {{/if}} {{#if property}}
+        <meta property="{{property}}" content="{{content}}" />
+        {{/if}} {{/meta}}
+    </head>
+    <body style="margin: 0; font-family: var(--ww-default-font-family, unset)">
+        <noscript>
+            <strong>
+                We're sorry but this website doesn't work properly without JavaScript enabled. Please enable it to
+                continue.
+            </strong>
+        </noscript>
+        <div id="app"></div>
+        {{{scripts.body}}}
+        <script type="module" src="@/_front/main.js"></script>
+    </body>
+</html>
